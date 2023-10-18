@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 30%;
+            margin: 1%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .buy-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Styles for the pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            width: 60%;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>$$$$$$$$$ CONCORRA 1.000.000,00 MILHAO SORTEIO DO PIX TODO MES $$$$$$$$$$</h1>
+    <div class="container">
+        <div class="card">
+            <h2>PLANO BASICO 96%</h2>
+            <p>Preço: R$ 1,00</p>
+            <button class="buy-button" onclick="openPopup(1)">Comprar</button>
+        </div>
+        <div class="card">
+            <h2>PLANO MEDIO 56%</h2>
+            <p>Preço: R$ 5,00</p>
+            <button class="buy-button" onclick="openPopup(2)">Comprar</button>
+        </div>
+        <div class="card">
+            <h2>PLANO MESTRE 36%</h2>
+            <p>Preço: R$ 10,00</p>
+            <button class="buy-button" onclick="openPopup(3)">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Pop-up for Product Details -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(1)">&times;</span>
+            <h2>BOA SORTE</h2>
+            <p>00020126360014BR.GOV.BCB.PIX0114+559898309471252040000530398654041.005802BR5907Ronaldo6009sao paulo62070503***63043BA3
+</p>
+        </div>
+    </div>
+    
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(2)">&times;</span>
+            <h2>BOA SORTE</h2>
+            <p>00020126360014BR.GOV.BCB.PIX0114+559898309471252040000530398654045.005802BR5907Ronaldo6008sao luis62070503***63044D39
+</p>
+        </div>
+    </div>
+    
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup(3)">&times;</span>
+            <h2>BOA SORTE</h2>
+            <p>00020126360014BR.GOV.BCB.PIX0114+5598983094712520400005303986540510.005802BR5907Ronaldo6008sao luis62070503***6304ABE6
+</p>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(productNumber) {
+            var popup = document.getElementById("popup" + productNumber);
+            popup.style.display = "block";
+        }
+
+        function closePopup(productNumber) {
+            var popup = document.getElementById("popup" + productNumber);
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>
