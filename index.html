@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação para a Fundação Banco do Brasil</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Estilos CSS básicos (você pode personalizar conforme necessário) */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #0099cc;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        #donate-button {
+            background-color: #0099cc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Doação para a Fundação Banco Social</h1>
+    </header>
+    <div class="container">
+        <h2>Faça uma doação agora</h2>
+        <p>Sua doação ajudará a Fundação Banco Social a continuar sua missão de apoio às comunidades carentes.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imagem1.jpg" alt="Imagem 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagem2.jpg" alt="Imagem 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagem3.jpg" alt="Imagem 3">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <a id="donate-button" href="https://mpago.la/2BtpUdH">Doar Agora</a>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 10000, // 1000ms = 1 segundo
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>
